@@ -46,4 +46,4 @@ def edit(cat_id):
     data = request.get_json()
     new_price = data['price']
     database.edit_instance(Cats, id=cat_id, price=new_price)
-    return json.dumps("Edited"), 200
+    return json.dumps("Edited"), 200  
