@@ -42,7 +42,7 @@ class BlogpostModel(db.Model):
     @staticmethod
     def get_all_blogposts():
         return BlogpostModel.query.all()
-
+ 
     @staticmethod
     def get_one_blogpost(id):
         return BlogpostModel.query.get(id)
