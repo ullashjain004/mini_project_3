@@ -69,7 +69,7 @@ class Auth():
                 )
             token = request.headers.get('api-token')
             data = Auth.decode_token(token)
-            if data['error']:
+            if data['error']: 
                 return Response(
                     mimetype="application/json",
                     response=json.dumps(data['error']),
