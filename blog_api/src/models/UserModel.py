@@ -4,7 +4,7 @@ import datetime
 from . import db, bcrypt
 from .BlogpostModel import BlogpostSchema
 
-
+ 
 class UserModel(db.Model):
     """
     User Model
